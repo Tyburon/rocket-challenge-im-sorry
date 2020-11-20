@@ -1,9 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { margin } from 'polished';
 import React from 'react';
-
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
-import { FiPower, FiClock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/Logo.png';
@@ -31,7 +27,6 @@ import {
 } from './styles';
 
 const Main: React.FC = () => {
-
   // Desculpa pela qualidade do codigo, eu realmente fiz o melhor qeu pude com o tempo que tinha
   // Me desculpa pelas gambiarras de Css, eu consigo fazer melhor, mas pra fazer rapido é mais facil de pensar
 
@@ -52,7 +47,7 @@ const Main: React.FC = () => {
               <a href="#parceiros">Parceiros</a>
             </MenuListItem>
             <MenuListItem>
-              <a href="blog">Blog</a>
+              <Link to="/blog">Blog</Link>
             </MenuListItem>
           </MenuList>
 
@@ -160,11 +155,9 @@ const Main: React.FC = () => {
           </div>
           <div style={{ width: 400 }}>
             <p style={{ marginTop: 10, textAlign: 'left' }}>
-              A exemplo das melhores tecnologias do mercado, nós adaptamos a
-              frase “Write once, run anywhere” ao nosso negócios. Uma vez
-              utilizando nosso produto com boas práticas, muitos provetios podem
-              ser tirados além da proposta inical de aperfeiçoar suas
-              habilidades visando apenas os negócios.
+              Apesar do tempo necessário ao processo de aprendizado de uso do
+              nossos serviços, após alguma tempo de uso se torna cada vez mais
+              simples de usar e aprender.
             </p>
           </div>
         </PageRegularContent>
@@ -219,7 +212,7 @@ const Main: React.FC = () => {
               <label>Mensagem</label>
               <Input />
               <div style={{ marginTop: 32, alignSelf: 'flex-end' }}>
-                <Button onClick={() => {}}>Enviar </Button>
+                <Button>Enviar </Button>
               </div>
             </div>
           </PageRegularContent>

@@ -1,9 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { margin } from 'polished';
 import React from 'react';
-
-import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
-import { FiPower, FiClock } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/Logo.png';
@@ -17,6 +13,7 @@ import {
   Post,
   Footer,
   PageContent,
+  PageNotRegularContent,
 } from './styles';
 
 const Main: React.FC = () => {
@@ -26,11 +23,16 @@ const Main: React.FC = () => {
         <HeaderContent>
           <img src={Logo} alt="logo" />
 
-          <a href="/">
+          <Link to="/">
             <Button>Voltar</Button>
-          </a>
+          </Link>
         </HeaderContent>
       </Header>
+
+      <PageNotRegularContent>
+        <h1>Blog</h1>
+        <p>Posts para te auxiliar com técnicas de uso dos nosso produto</p>
+      </PageNotRegularContent>
 
       <PageContent>
         <a
