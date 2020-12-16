@@ -17,6 +17,18 @@ export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+  li + li::before {
+    content: '';
+    width: 2px;
+    height: 16px;
+    background: #0028F9;
+    margin: 0 8px;
+  }
 `;
 
 export const Logo = styled.h1`
@@ -69,7 +81,7 @@ export const MenuListItem = styled.li`
   }
 
   & + li {
-    margin-left: 16px;
+    margin-left: 4px;
   }
 `;
 
@@ -132,6 +144,20 @@ export const Contato = styled.div`
   height: 638px;
   background: #fafafa;
   border-radius: 79px;
+`;
+
+export const Parceiros = styled.div`
+max-width: 1120px;
+margin: 150px auto;
+display: flex;
+flex-direction: column;
+align-content: center;
+align-items: center;
+
+h1 {
+  color: #000;
+  font-size: 62px;
+}
 `;
 
 export const Input = styled.input`

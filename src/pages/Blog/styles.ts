@@ -85,7 +85,7 @@ export const PageContent = styled.div`
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 40px;
     color: #000;
   }
 
@@ -139,7 +139,7 @@ export const Text = styled.p`
 export const Post = styled.div`
   margin: 100px 0;
   width: 1000px;
-  height: 600px;
+  height: 400px;
   background: #fafafa;
   border-radius: 79px;
 `;

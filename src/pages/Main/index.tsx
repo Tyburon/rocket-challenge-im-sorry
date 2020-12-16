@@ -21,6 +21,7 @@ import {
   PageFirstContent,
   PageRegularContent,
   PageNotRegularContent,
+  Parceiros,
   Contato,
   Input,
   Footer,
@@ -70,8 +71,6 @@ const Main: React.FC = () => {
       <PageRegularContent id="quemSomos">
         <div>
           <img src={Image1} alt="" />
-          Illustration by <a href="undefined">Icons 8</a> from{' '}
-          <a href="https://icons8.com/">Icons8</a>
         </div>
         <div
           style={{
@@ -162,12 +161,12 @@ const Main: React.FC = () => {
           </div>
         </PageRegularContent>
       </PageNotRegularContent>
-      <PageNotRegularContent id="parceiros">
+      <Parceiros id="parceiros">
         <h1>Parceiros</h1>
 
-        <img style={{ marginTop: 140 }} src={Parceiros1} alt="" />
-        <img style={{ marginTop: 112 }} src={Parceiros2} alt="" />
-      </PageNotRegularContent>
+        <img style={{ marginTop: 140 }} src={Parceiros1} alt="" width={600}/>
+        <img style={{ marginTop: 112 }} src={Parceiros2} alt="" width={600}/>
+      </Parceiros>
       <PageNotRegularContent id="contato">
         <h1>Contato</h1>
         <Contato style={{ marginTop: 80 }}>

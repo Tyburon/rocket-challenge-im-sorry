@@ -62,7 +62,7 @@ const Main: React.FC = () => {
       <PageContent>
         <a
           target="_blank"
-          href="https://medium.com/@vazcaino/a-import%C3%A2ncia-da-comunica%C3%A7%C3%A3o-no-desenvolvimento-de-software-3167e4d402eb"
+          href="https://medium.com/the-non-traditional-developer/pair-programming-the-good-the-bad-and-the-ugly-5fc3f9c3663c"
         >
           <Post>
             <PageContent>
